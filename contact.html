@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact SChen</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Google Font_Lato_400+700 regular+italit-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--reset style-->
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+	<!--Hearder: logo and main navigation menu-->
+	<header class="page-header">
+		<div class="logo_wrapper">
+			<img class="page-header__item" src="img/logo.jpg" alt="Personal logo of SChen, a text logo in uppercase letters that consists of my name">
+		</div>
+		<nav class="page-header__item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="index.html" role="menuitem">Home</a>	
+				</li>
+				<li role="presentation">
+					<a href="about.html" role="menuitem">About me</a>			
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem">Work</a>			
+				</li>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem" class="navigation-list__item--avtive">Contact</a>		
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container-contact">
+		<!--My contact information (need to be added)-->
+		<div class="contact">
+			<h1>Contact</h1>
+			<address>
+				xxxx GmbH<br>
+				xxxx Str. 123<br>
+				12345 Frankfurt<br>
+				Germany<br>
+				<br>
+				Telephone: <a href="tel:+4912345678" aria-label="telephone 0 4 9. 1 2 3. 4 5 6 7 8.">+49 123 45678</a><br>
+				Skype: <a href="skype:yyyyy">yyyyy</a><br>
+				Email: <a href="mailto:xxx@outlook.com">xxx@outlook.com</a>
+			</address>
+			<a href="mailto:xxx@outlook.com" class="button">Contact me</a>
+		</div>
+
+		<!--Contact form-->
+		<div class="contact-form">
+			<form action="#" method="post" id="contact-form">
+				<label for="contact-email" class="standard-label">*E-mail: </label>
+				<input type="email" id="contact-email" name="contact-email" required>
+				<label for="contact-tel" class="standard-label">Telephone: </label>
+				<input type="tel" id="contact-tel" name="contact-tel">
+				<label for="msg" class="standard-label">*Message: </label>
+				<textarea id="msg" name="msg" rows="5" cols="30" maxlength="240" placeholder="Please leave a message here" required></textarea>
+				<input type="submit" name="Send message" value="Send message">
+			</form>
+		</div>
+	</main>
+
+
+	<!--footer: social media-->
+	<footer class="page-footer">
+		<p>Find me on</p>
+		<div class="social-media">
+			<a href="#"><img class="social-media__icon" src="img/github_icon.svg" alt="Github"></a>
+			<a href="#"><img class="social-media__icon" src="img/twitter_icon.svg" alt="Twitter"></a>
+			<a href="#"><img class="social-media__icon" src="img/linkedin_icon.svg" alt="Linkedin"></a>
+		</div>
+	</footer>
+
+	<!--tota11y to check accessibility-->
+	<script src="js/tota11y.min.js"></script>
+		
+</body>
+</html>
