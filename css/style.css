@@ -21,8 +21,8 @@ bright orange:  #e79e19;
     --font-weight-h: 700;
     --font-size1: 30px;
     --font-size2: 24px;
-    --font-size3: 18px;  
-    --font-size4: 16px; 
+    --font-size3: 18px;
+    --font-size4: 16px;
 }
 
 body {
@@ -34,8 +34,8 @@ body {
 }
 
 h1 {
-    font-size: var(--font-size1);
-    font-weight: var(--font-weight-h);
+  font-size: var(--font-size1);
+  font-weight: var(--font-weight-h);
 }
 
 h2 {
@@ -155,7 +155,7 @@ a:active {
 }
 .profile h1, .profile p, .profile a {
     margin: 0 0 4% 0;
-} 
+}
 
 #profile__web {
     background-color:var(--dark-grey);
@@ -195,6 +195,10 @@ button:hover, button:focus,
 
 .about-me table {
     margin: 2% auto;
+}
+
+.about-me .button {
+    margin:5% auto 3%
 }
 
 @keyframes color-change {
@@ -249,7 +253,7 @@ button:hover, button:focus,
     width: 31%;
     margin: 0 3.2% 2% 0;
     text-align: left;
-    
+
 }
 
 .project-list__item:nth-child(3) {
@@ -264,7 +268,7 @@ button:hover, button:focus,
     .project-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap:  20px;        
+        grid-gap:  20px;
     }
 
     .project-list__item {

@@ -209,6 +209,10 @@ button:hover, button:focus,
     margin: 2% auto;
 }
 
+.about-me .button {
+    margin:5% auto 3%
+}
+
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
