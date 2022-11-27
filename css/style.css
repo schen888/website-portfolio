@@ -11,7 +11,7 @@ bright orange:  #e79e19;
  */
 :root {
     --primary-color: #bb3355;
-    --primary-color-lighter: #c85b76;
+    --primary-color-darker:#a82d4c;
     --primary-color-lighter2: #eecdd6;
     --secondary-color: #4c4c4c;
     --light-grey: #eee;
@@ -56,16 +56,16 @@ th,td {
     padding: 0px 5px;
 }
 
+b {
+    font-weight: bold;
+}
+
 a {
     color:var(--secondary-color);
 }
 
-a:visited {
-    color: var(--primary-color);
-}
-
 a:hover, a:focus{
-    color:var(--primary-color-lighter);
+    color:var(--primary-color);
     text-decoration: none;
 }
 
@@ -175,14 +175,14 @@ button, .button {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     transition:0.2 opacity;
 }
 
 button:hover, button:focus,
 .button:hover, .button:focus {
+    color:white;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .about-me {
@@ -247,21 +247,26 @@ button:hover, button:focus,
     margin: 2% 3%;
 }
 
-.project-list__item {
-    display: inline-block;
-    background-color: var(--light-grey);
-    width: 31%;
-    margin: 0 3.2% 2% 0;
-    text-align: left;
-
+.project-list__item--btn {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.project-list__item:nth-child(3) {
-    margin: 0 0 2% 0;
+.project-list__item--btn a:last-child {
+    margin-left: 10px;    
 }
 
-.project-list__item:last-child {
-    margin: 0 0 2% 0;
+.project-list__item--btn a:first-child{
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.project-list__item--btn a:first-child:hover {
+    color: var(--primary-color-darker);
+} 
+
+.project-list__item--content {
+    margin-bottom: 20px;
 }
 
 @supports (display: grid) {
@@ -276,7 +281,14 @@ button:hover, button:focus,
         text-align: left;
         width: auto;
         min-height: auto;
-        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .project-list__item--img {
+        width:100%;
     }
 
     .project-list__item:last-child {

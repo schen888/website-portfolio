@@ -41,33 +41,79 @@
 		<h1>Work</h1>
 		<div class="project-list">
 			<!--Grid items will live here: my projects-->
-			<div class="project-list__item">
-				<h2>Project 1</h2>
-				<p>
-					Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-				</p>
-				<a href="#">See project on GitHub</a>
+			<div class="project-list__item">	
+				<div class="project-list__item--content">
+					<img class="project-list__item--img" src="./img/pokodex.png" alt="A screenshot of my pokodex website."/>
+					<h2>Pokedéx App</h2>	
+					<p>
+						This project is a small Pokédex app to display a list of Pokémons (1154 entries). It loads data from an external Pokémon API. By clicking on each 
+						item, user can view details for that item. User can also search pokémons by their names.
+					</p>
+					<p>This app is hosted on GitHub Pages.</p>
+					<p><b>Technical dependencies</b>: HTML, CSS, ES6, Bootstrap</p>
+				</div>
+				<div class="project-list__item--btn">
+					<a href="https://github.com/schen888/pokedex"  target="_blank" rel="noopener noreferrer" onclick="this.blur()">On GitHub</a>
+					<a href="https://schen888.github.io/pokedex/" class="button" target="_blank" rel="noopener noreferrer" onclick="this.blur()">Live Project</a>
+				</div>
 			</div>
+
 			<div class="project-list__item">
-				<h2>Project 2</h2>
-				<p>
-					Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-				</p>
-				<a href="#">See project on GitHub</a>
+				<div class="project-list__item--content">
+					<img class="project-list__item--img" src="./img/movie-api.png" alt="A screenshot of the documentation of my movie api."/>
+					<h2>Movie API</h2>
+					<p>
+						This is a movie API, which contains information about movie's title, description, genre, director, imageURL and whether it is featured or not. 
+						For genre, the genre's name and a short description about the genre are included. For director, his or her name, bio, birth year and death year 
+						are included. It also allows users to register with an username, password and Email address and to log in with username and password. Users can 
+						add/delete movies to their favorite movies list. They can also delete their user information.
+					</p>
+					<P>My API is hosted on heroku and my database is hosted on MongoDB Atlas.</P>
+					<p><b>Technical dependencies</b>: HTML, ES6, Node.js, Express, MongoDB</p>
+				</div>
+				<div class="project-list__item--btn">
+					<a href="https://github.com/schen888/movie_api" target="_blank" rel="noopener noreferrer" onclick="this.blur()">On GitHub</a>
+					<a href="https://favmovie-schen.herokuapp.com/" class="button" target="_blank" rel="noopener noreferrer" onclick="this.blur()">Live Project</a>
+				</div>
 			</div>
+
 			<div class="project-list__item">
-				<h2>Project 3</h2>
-				<p>
-					Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-				</p>
-				<a href="#">See project on GitHub</a>
+				<div class="project-list__item--content">
+					<img class="project-list__item--img" src="./img/favmovie-client-react.png" alt="A screenshot of my FavMovie App."/>
+					<h2>FavMovie Client</h2>
+					<p>
+						For this project I built the frontend of my movie app by using React and Redux. Combining the frontend with my movie app backend, I have finished
+						my FavMovie App. With this App user can register an account with a username and an Email address. They can add
+						movies into their favorite movies list and remove them from it, update their account info and delete their accounts. User info is secured by means of
+						restricted cross-origin, JWT tocken and hashed password in my API.
+					</p>
+					<p>My client side is hosted on Netlify.</p>
+					<p><b>Technical dependencies</b>: HTML, ES6, SCSS, React, Redux, React-Bootsrap, Parcel, Axios.</p>
+				</div>
+				<div class="project-list__item--btn">
+					<a href="https://github.com/schen888/favMovie-client" target="_blank" rel="noopener noreferrer" onclick="this.blur()">On GitHub</a>
+					<a href="https://favmovie-schen.netlify.app" class="button" target="_blank" rel="noopener noreferrer" onclick="this.blur()">Live Project</a>
+				</div>
 			</div>
+
 			<div class="project-list__item">
-				<h2>Project 4</h2>
-				<p>
-					Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-				</p>
-				<a href="#">See project on GitHub</a>
+				<div class="project-list__item--content">
+					<img class="project-list__item--img" src="./img/meet-app.png" alt="A screenshot of my Meet App."/>
+					<h2>Meet App</h2>
+					<p>
+						Within this project, I built a serverless, progressive web application (PWA) with React by using test-driven development (TDD) technique. 
+						The documentation (acceptance test) of the app was built by applying the behavior-driven development (BDD) technique. An end-to-end test 
+						was conducted on this App as well. The Meet App uses OAuth 2.0 to access the Google Calendar API.  
+					</p>
+					<p>User can login the Meet App with their google account. A list of upcoming events for developers in different cities (simulating data) can 
+						be accessed. User can filter events by city and selecting the number of event to be shown. Details of events can be shown or hidden.</p>
+					<p>My serverless auth-API is hosted on AWS Lambda and the client side is hosted on GitHub Pages.</p>
+					<p><b>Technical dependencies</b>: HTML, ES6, CSS, React, Rechart, serverless, axios, jest, jest-cucumber, enzyme, puppeteer.</p>
+				</div>
+				<div class="project-list__item--btn">
+					<a href="https://github.com/schen888/meet" target="_blank" rel="noopener noreferrer" onclick="this.blur()">On GitHub</a>
+					<a href="https://schen888.github.io/meet/" class="button" target="_blank" rel="noopener noreferrer" onclick="this.blur()">Live Project</a>
+				</div>
 			</div>
 			<div class="project-list__item">
 				<h2>Project 5</h2>
