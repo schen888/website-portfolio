@@ -5,17 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SChen Portfolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Google Font_Lato_400+700 regular+italit-->
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--reset style-->
-	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<!--Hearder: logo and main navigation menu-->
 	<header class="page-header">
-		<div class="logo_wrapper">
-			<img class="page-header__item" src="img/logo.jpg" alt="Personal logo of SChen, a text logo in uppercase letters that consists of my name">
+		<div class="page-header__item">
+			<h2>SHUANG CHEN</h2>
 		</div>
 		<nav class="page-header__item">
 			<ul role="menubar" class="navigation-list">
@@ -23,13 +23,13 @@
 					<a href="index.html" role="menuitem" class="navigation-list__item--avtive">Home</a>
 				</li>
 				<li role="presentation">
-					<a href="about.html" role="menuitem">About me</a>
+					<a href="about.html" role="menuitem" class="navigation-list__item">About</a>
 				</li>
 				<li role="presentation">
-					<a href="work.html" role="menuitem">Work</a>
+					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
 				</li>
 				<li role="presentation">
-					<a href="contact.html" role="menuitem">Contact</a>
+					<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -38,12 +38,11 @@
 	<!--main content: portrait and welcome msg-->
 	<main class="profile">
 		<img src="https://placekitten.com/g/300/300" class="profile__portrait" alt="">
-		<h1>Hello World!</h1>
+		<h3>Hello World!</h3>
 		<p>
-			My name is SChen. I am a <span id="profile__web">&lt;web&gt;</span> developer from Frankfurt. I like coding, reading, cooking and learning new stuff.
+			My name is Shuang Chen. I am a <span id="profile__web">&lt;web&gt;</span> developer based in Germany. I like coding, reading, cooking and learning new stuff.
 		</p>
 		<a href="https://github.com/schen888" target="_blank" rel="noopener noreferrer" onclick="this.blur()">Check out some of my code</a>
-		<button type="button" onclick="alert('Hello to my website!')">Click me</button>
 	</main>
 
 	<!--footer: social media-->
