@@ -227,7 +227,7 @@ button:hover, button:focus,
     text-align: center;
     margin: 0 auto;
     padding: 0 5%;
-    padding-top: 11vh;
+    padding-top: 12vh;
     max-width: 1000px;
 }
 
@@ -242,7 +242,8 @@ button:hover, button:focus,
 }
 
 .about-me table {
-    margin: 0 auto;
+    margin:0 auto;
+    margin-top: 25px;
 }
 
 .about-me__item > thead {
@@ -265,13 +266,13 @@ tbody > tr:nth-child(even) {
 }
 
 .about-me .button {
-    margin:30px auto 32px;
+    margin:50px auto 40px;
 }
 
 /*work-page__<section>*/
 .container-project {
     width:100%;
-    padding-top: 11vh;
+    padding-top: 12vh;
     padding-bottom: 30px;
     padding-left: 5%;
     padding-right: 5%;
@@ -439,6 +440,18 @@ tbody > tr:nth-child(even) {
         width: 100%;
     }
 
+    .about-me h1 {
+        font-size: 16px;
+    }
+
+    .about-me .button {
+        margin: 28px auto 18px;
+    }
+
+    .about-me table {
+        margin-top: 10px;
+    }
+
     .about-me__item th, .about-me__item td{
         border:solid 1.5px white;
         padding: 3px 3px;
@@ -447,12 +460,16 @@ tbody > tr:nth-child(even) {
     }
 
     /* Work-page */
-    .project-header, .project-header h1 {
-        font-size: 12px;
+    .project-header h1 {
+        font-size: 16px;
+    }
+
+    .project-header p {
+        font-size: 14px;
     }
 
     .container-project {
-        padding-top: 15vh;
+        padding-top: 16vh;
     }
 
     .project-list {
@@ -469,7 +486,7 @@ tbody > tr:nth-child(even) {
     
     /* contact-page */
     .container-contact {
-        padding-top: 15vh;
+        padding-top: 16vh;
     }
 
     .contact-header h1 {
@@ -488,10 +505,6 @@ tbody > tr:nth-child(even) {
 
 @media all and (min-width: 500px) and (max-width: 1000px) {
     /* work-page */
-    .container-project {
-        padding-top: 10vh;
-    }
-
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
