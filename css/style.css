@@ -16,8 +16,8 @@ bright orange:  #e79e19;
     /* --primary-color-lighter2: #eecdd6; */
     --secondary-color: #eee;
     --link-hover-color: #032050;
-    --table-bg-dark:#e9ecef;
-    --table-bg-light:#f8f9fa;
+    --table-bg-dark:#e7e7e7;
+    --table-bg-light:#f8f8f8;
     --shadow-color: #b2b2b2;
     --shadow-color-lighter: #e5e5e5;
 
@@ -152,7 +152,7 @@ a:hover, a:focus{
     height: auto;
 }
 
-/* index-page__<main>*/
+/* home-page*/
 .profile {
     max-width: 700px;
     margin: 0 auto; /*to center the main part*/
@@ -327,7 +327,7 @@ tbody > tr:nth-child(even) {
     }
 
     .project-list__item {
-        background-color: var(--light-grey);
+        background-color: var(--table-bg-light);
         text-align: left;
         width: auto;
         min-height: auto;
@@ -364,10 +364,6 @@ tbody > tr:nth-child(even) {
         padding: 10px 0;
     }
     
-  /*   .project-list__item--content {
-        padding-bottom: 15px;
-    }
-     */
     .project-list__item--content p {
         padding-bottom: 10px;
     }
@@ -408,6 +404,7 @@ tbody > tr:nth-child(even) {
         padding-bottom: 10px;
     }
 
+    /* profile-page */
     .profile {
         padding-top: 20vh;
         padding-bottom: 10vh;
@@ -418,7 +415,7 @@ tbody > tr:nth-child(even) {
         font-size: 16px;
     }
 
-    /* About-me */
+    /* About-me-page */
     .about-me {
         padding-top: 16vh;
         width: 100%;
@@ -426,12 +423,12 @@ tbody > tr:nth-child(even) {
 
     .about-me__item th, .about-me__item td{
         border:solid 1.5px white;
-        padding: 3px 5px;
+        padding: 3px 3px;
         width:33.33%;
         font-size: 14px;
     }
 
-    /* work section */
+    /* Work-page */
     .project-header, .project-header h1 {
         font-size: 12px;
     }
