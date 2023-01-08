@@ -144,7 +144,7 @@ a:hover, a:focus{
     width: 100%;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .social-media__icon {
@@ -268,33 +268,6 @@ tbody > tr:nth-child(even) {
     margin:30px auto 32px;
 }
 
-.svg-wrapper__global {
-    max-width: 300px;
-    margin:3px auto 0;
-}
-
-@keyframes color-change {
-    0%{
-        fill: #0455d8;
-    }
-
-    35% {
-        fill: #3676df;
-    }
-
-    70%{
-        fill: teal;
-    }
-
-    100% {
-        fill: #008000;
-    }
-}
-
-.global-map {
-  animation: 5s color-change infinite alternate linear;
-}
-
 /*work-page__<section>*/
 .container-project {
     width:100%;
@@ -393,6 +366,51 @@ tbody > tr:nth-child(even) {
     } 
 }
 
+/*contact-page*/
+.container-contact {
+    padding-top: 12vh;
+    text-align: center;
+}
+
+.contact-header h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+}
+
+.contact-content {
+    padding: 60px 0;
+}
+
+.svg-wrapper__global {
+    max-width: 600px;
+    padding: 46px 0;
+    margin: 0 auto;
+}
+
+@keyframes color-change {
+    0%{
+        fill: #0455d8;
+    }
+
+    35% {
+        fill: #3676df;
+    }
+
+    70%{
+        fill: teal;
+    }
+
+    100% {
+        fill: #008000;
+    }
+}
+
+.global-map {
+  animation: 5s color-change infinite alternate linear;
+}
+
+
+/* media queries */
 @media all and (max-width:500px) {
     .page-header__item h2 {
         font-family:'Press Start 2P', cursive;
@@ -449,6 +467,23 @@ tbody > tr:nth-child(even) {
         font-size: 16px;
     }
     
+    /* contact-page */
+    .container-contact {
+        padding-top: 15vh;
+    }
+
+    .contact-header h1 {
+        font-size: 16px;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+    }
+
+    .svg-wrapper__global {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 1000px) {
@@ -460,18 +495,4 @@ tbody > tr:nth-child(even) {
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
-}
-
-
-/*contact-page*/
-.container-contact {
-    margin: 2% 3%;
-    text-align: center;
-}
-.contact, .contact-form, .contact address {
-    margin: 2% auto;
-}
-
-.contact .button {
-    margin: 3%;
 }
