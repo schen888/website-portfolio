@@ -52,13 +52,14 @@
 				</div>
 
 				<div class="project-text-wrapper">
-					<h2 class="project-list__item--header">Movie API</h2>
+					<h2 class="project-list__item--header">FavMovie API</h2>
 					<div class="project-list__item--content">	
 						<p>
-							This is a movie API, which contains information about movie's title, description, genre, director, imageURL and whether it is featured or not. 
-							For genre, the genre's name and a short description about the genre are included. For director, his or her name, bio, birth year and death year 
-							are included. It also allows users to register with an username, password and Email address and to log in with username and password. Users can 
-							add/delete movies to their favorite movies list. They can also delete their user information.
+							This is the server-side I built for my FavMovie app. It consists of a REST API and an architected database built
+							using JavaScript, Node.js, Express and MongoDB. The REST API is accessed via commonly used HTTP methods like GET,
+							POST, PUT and DELETE. The CRUD methods are used to retrieve data from the database which is non-relational.
+							The documentation for the API, including a detailed list of endpoints is available 
+							<a href="https://favmovie-schen.herokuapp.com/documentation.html" target="_blank" rel="noopener noreferrer" onclick="this.blur()">here</a>.
 						</p>
 						<p>My API is hosted on heroku and my database is hosted on MongoDB Atlas.</p>
 						<p><b>Technical dependencies</b>: HTML, ES6, Node.js, Express, MongoDB</p>
@@ -82,7 +83,7 @@
 					<h2 class="project-list__item--header">FavMovie React</h2>
 					<div class="project-list__item--content">	
 						<p>
-							For this project I built the frontend of my movie app by using React and Redux. Combining the frontend with my movie app backend, I have finished
+							For this project I built the frontend of my movie app by using React and Redux. Combining the frontend with my FavMovie app backend, I have finished
 							my FavMovie App. With this App user can register an account with a username and an Email address. They can add
 							movies into their favorite movies list and remove them from it, update their account info and delete their accounts. User info is secured by means of
 							restricted cross-origin, JWT tocken and hashed password in my API.
@@ -142,7 +143,7 @@
 					<h2 class="project-list__item--header">FavMovie Angular</h2>
 					<div class="project-list__item--content">	
 						<p>
-							This is another client side I built for my FavMovie App and it was built with Angular. For the backend I used my Movie API.
+							This is another client side I built for my FavMovie app and it was built with Angular. For the backend I used my Movie API.
 							This App basically has the same features as the FavMovie React. Only instead of showing seperate views for 'Synopsis',
 							'Genre' and 'Director' like the React App, this App shows a modal for each of them.  
 						</p>
