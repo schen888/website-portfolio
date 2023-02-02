@@ -11,9 +11,7 @@ bright orange:  #e79e19;
  */
 :root {
     --primary-color: #417ddd;
-    /* --primary-color: #3676df ; */
     --primary-color-darker:#1060e4;
-    /* --primary-color-lighter2: #eecdd6; */
     --secondary-color: #eee;
     --link-hover-color: #032050;
     --table-bg-dark:#e7e7e7;
